@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Snooze</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet/home.css">
+  <link rel="stylesheet" href="stylesheet/base.css">
+
+</head>
+
+<body>
+
+  <!-- This is the Navbar which will be on every page -->
+
+  <nav class="navbar navbar-expand-lg  navbar-dark navbar-inverse fixed-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="homePage.html">SNOOZE.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- All items in here will be in the collapse button -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="booking.php">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cancel.php">Reservation Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+
+  <!-- jumbotron -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-md-8">
+        <div class="jumbotron" style="color:white;">
+          <h1 style="text-align:center;">Reserve Now!</h1>
+          <p class="homeGreet">Get your snooze quick and easy through us. We offer a wide range of rooms at the most competitive price!</p><br>
+          <p class="homeGreet">We offer simple reservations with fast confirmations!</p> <br><br>
+          <p class="homeGreet">Select your State below!</p> <br>
+
+        <!-- Reserve Now! form -->
+          <form method="POST" action="booking.php">
+                <select  class="form-control" name="state" id="selectState">
+                <option value="California">California</option>
+                <option value="Washington">Washington</option>
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="New York">New York</option>
+                </select>
+            <br><br><br>  <input type="submit" name="Submit" value="Submit"> <!--This sends the state value to the next page -->
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end jumbotron -->
+
+  <div class="topHotels-container">
+
+    <div class="topHotels-header">
+      <br>
+      <h1>Top Hotels</h1>
+    </div>
+
+
+    <ul class="hotel-list">
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel1.jpg" alt="">
+          <span class="imageLabel">Hotel1</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel2.jpg" alt="">
+          <span class="imageLabel">Hotel2</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel3.jpeg" alt="">
+          <span class="imageLabel">Hotel3</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel4.jpg" alt="">
+          <span class="imageLabel">Hotel4</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel5.jpg" alt="">
+          <span class="imageLabel">Hotel5</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel6.jpg" alt="">
+          <span class="imageLabel">Hotel6</span>
+        </a>
+      </li>
+
+      <li class="imageItem">
+        <a href="#">
+          <img class="image" src="images/hotel7.jpeg" alt="">
+          <span class="imageLabel">Hotel7</span>
+        </a>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+
+  <!-- These scripts are required on every page -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
